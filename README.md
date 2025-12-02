@@ -1,30 +1,32 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+Nama,Matpel,Nilai
+Ade,Bahasa Indonesia,87
+Bara,Matematika,90
+Aira,Bahasa Indonesia,88
+Badi,Bahasa Inggris,78
+Cyla,Bahasa Inggris,90
+Khansa,Matematika,98
+Maya,Bahasa Inggris,85
+Dwi,Matematika,70
+Raka,Fisika,95
+Rasya,Fisika,90
+Mala,Produktif,80
+Sania,Fisika,86
+Agus,Bahasa Indonesia,87
+Gilam,Bahasa Indonesia,75
+Rudi,Fisika,75
+Faizal,Produktif,80
+Hanif,Produktif,90
+Danish,Produktif,85
+Darian,Produktif,85
+Evelyn,Fisika,90
+Raina,Fisika,95
+Ade,Fisika,90
+Rasya,Fisika,85
+Fara,Matematika,85
+Ryan,Fisika,98
+Fani,Bahasa Indonesia,70
+Lani,Bahasa Indonesia,60
+Ahmad,Bahasa Inggris,95
 
-data= pd.read_csv('nilai_siswa.csv')
-print(data.info())
-print(data.head())
-print(data.describe())
 
-print("Rata Rata: ", data['Nilai'].mean())
-
-print("Median:", data('Nilai').median())
-print("Modus:", data('Nilai').mode()[0])
-
-# matematika = data[data['Matpel'] == 'Matematika']
-# print(matematika)
-
-data.groupby('Mapel')['Nilai'].agg(['max','min'])
-rata = data.groupby('Mapel')['Nilai'].mean()
-rata.plot(kind='bar')
-plt.title('Rata-Rata Nilai per Mapel')
-plt.xlabel('Mata Pelajaran')
-plt.ylabel('Nilai Rata-Rata')
-plt.show()
-
-sns.boxplot(x='Mapel', y='Nilai', data=data)
-plt.title('Sebaran Nilai per Mata Pelajaran')
-plt.show()
-
-
+isi dari nilai_siswa.csv
